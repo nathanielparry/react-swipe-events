@@ -1,11 +1,12 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 class reactSwipeEvents extends React.Component {
-    
+
     constructor (props, context) {
         super(props)
         this.state = { originalX: 0, originalY: 0 }
-        
+
         this.onTouchStart = this.onTouchStart.bind(this)
         this.onTouchMove = this.onTouchMove.bind(this)
         this.onTouchEnd = this.onTouchEnd.bind(this)
